@@ -1,14 +1,15 @@
 using Microsoft.AspNetCore.HttpOverrides;
+using Repository;
 using Server.Extension;
 
 string corsPolicyName = "CORS_POLICY_NAME";
 
 var builder = WebApplication.CreateBuilder(args);
 {
-    builder.Services.ConfigureCors(corsPolicyName);
-    //builder.Services.ConfigureRepositoryManager();             
+    builder.Services.ConfigureCors(corsPolicyName);     
+    builder.Services.ConfigureRepositoryManager();      // Repository Layer
     //builder.Services.ConfigureServiceManager();                
-    //builder.Services.AddSingleton<DapperContext>();     // Dapper Context
+    builder.Services.AddSingleton<DapperContext>();     // Dapper Context
 
     builder.Services.ConfigureSevices();
 

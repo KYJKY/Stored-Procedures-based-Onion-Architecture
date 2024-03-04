@@ -1,4 +1,7 @@
-﻿namespace Server.Extension
+﻿using Contracts.Repository;
+using Repository;
+
+namespace Server.Extension
 {
     public static class ServiceExtension
     {
@@ -18,9 +21,9 @@
             //.WithHeaders("accept", "content-type")); 
         });
 
-        //public static void ConfigureRepositoryManager(this IServiceCollection services) =>
-        //services.AddScoped<IRepositoryManager, RepositoryManager>();
-        //
+        public static void ConfigureRepositoryManager(this IServiceCollection services) =>
+        services.AddScoped<IRepositoryManager, RepositoryManager>();
+        
         //public static void ConfigureServiceManager(this IServiceCollection services) =>
         //services.AddScoped<IServiceManager, ServiceManager>();
 
