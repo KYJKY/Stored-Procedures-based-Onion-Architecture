@@ -5,17 +5,17 @@
         public static void ConfigureCors(this IServiceCollection services, string corsPolicyName) =>
         services.AddCors(options =>
         {
-            // 현재는 모든 도메인을 CORS 정책으로부터 허용함
+            // Currently all domains are allowed from CORS policy
             options.AddPolicy(corsPolicyName, builder =>
             builder.AllowAnyOrigin()
             .AllowAnyMethod()
             .AllowAnyHeader());
 
-            // 특정 도메인만 허용하도록 수정
+            // Allow only specific domains
             //options.AddPolicy(corsPolicyName, builder =>
-            //builder.WithOrigins("https://example.com")      // 입력한 도메인만 접근 가능
-            //.WithMethods("POST", "GET")                     // POST, GET 방식만 접근 가능
-            //.WithHeaders("accept", "content-type"));        // 특정 헤더만 허용
+            //builder.WithOrigins("https://example.com")
+            //.WithMethods("POST", "GET")              
+            //.WithHeaders("accept", "content-type")); 
         });
 
         //public static void ConfigureRepositoryManager(this IServiceCollection services) =>

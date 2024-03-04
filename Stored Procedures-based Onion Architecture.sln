@@ -3,17 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{9009AF2E-B504-422E-9016-CC55D80D5E41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{9009AF2E-B504-422E-9016-CC55D80D5E41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{46CCB2D6-9C48-4C88-AE0E-5B0B896D8043}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{46CCB2D6-9C48-4C88-AE0E-5B0B896D8043}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{9143FD8C-BBA2-4B2D-8693-4B012C740F06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{9143FD8C-BBA2-4B2D-8693-4B012C740F06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{ACBFC17D-4D55-4DE6-AC9E-23B84799588A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{ACBFC17D-4D55-4DE6-AC9E-23B84799588A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Presentation\Presentation.csproj", "{6113947A-674A-4160-A242-832935F1E5E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Presentation\Presentation.csproj", "{6113947A-674A-4160-A242-832935F1E5E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{1791D8B2-95D6-4B4F-B0B8-2D78C835A3A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{1791D8B2-95D6-4B4F-B0B8-2D78C835A3A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseQuery", "DatabaseQuery", "{1670A58E-37FD-4295-8EF4-8F6BFA7768FE}"
+	ProjectSection(SolutionItems) = preProject
+		TestLibrary Data.sql = TestLibrary Data.sql
+		TestLibrary Stored-Procedure.sql = TestLibrary Stored-Procedure.sql
+		TestLibrary Tables.sql = TestLibrary Tables.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
